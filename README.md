@@ -2,23 +2,16 @@
 
 This repository hosts the scripts and files used to reproduce the data presented in https://doi.org/10.26434/chemrxiv-2025-vzz1r
 
-## MDAnalysis script to split trajectory into .pqr files:
+## 📋 Table of Contents
 
-```python
-import MDAnalysis as mda
+- [Split trajectory into pqr files](#Split-trajectory-into-pqr files)
+- [Creation of potentials](#Creation-of-potentials)
 
-u = mda.Universe('./Data/mimic.tpr', 'Data/mimic_R1-R8_40ps_settime_centered.xtc')
-print (u)
 
-# spacing = 2 means write trajectory every 2 steps, i.e.
-# similar to: u.trajectory[0::2]
-frame_number = 0
-spacing = 40
-for frame in u.trajectory[0::spacing]:
-    print (frame, frame_number)
-    u.atoms.write(f"R1-R8_40ps_settime_centered_frame_{frame_number}.pqr",\
-                  frames = u.trajectory[frame_number:frame_number+1])
-    frame_number = frame_number + spacing
+## Split trajectory into pqr files:
+
+```
+trr_to_pqr_snapshots.py
 ```
 
 ## Creation of potentials
@@ -31,25 +24,47 @@ The creation of the `.pot` files has been generated through two approaches (see 
 
 ### mfcc approach
 
-```
-mfcc_ChR2_and_close-water_create_inputs.py
-mfcc_ChR2_and_close-water_write_potential.py
-```
+Execute one after the other, the following scripts:
+
+1. `mfcc_ChR2_and_close-water_create_inputs.py` creates the input fragment files
+
+2. `mfcc_ChR2_and_close-water_write_potential.py` writes the embedding potential in the form of a .pot file
+
 
 ### cp3 approach
 
-This approach was used for production, 
+This approach was used for production, where, as described in the paper, we will produce the spectra for the QM- and MM-sampled moieties:
 
-#### QM core = LYR-472
+#### QM-sampled moiety; LYR-472
+
+Execute one after the other, the following scripts:
+
+1. `cp3_core_QM_7480_LYR-472_create_inputs.py`
+
+2. `cp3_core_QM_7480_LYR-472_run_embedding.py`
+
+#### MM-sampled moiety; LYR-225
+
+Execute one after the other, the following scripts:
+
+
+1. `cp3_core_MM_3523_LYR-225_create_inputs.py`
+
+2. `cp3_core_MM_3523_LYR-225_run_embedding.py`
+
+
+## Placing ECPs:
+
+This script modifies the mol file and places ECPs in the surrounding MM atoms (6 Ang from core):
 
 ```
-cp3_core_QM_7480_LYR-472_create_inputs.py
-cp3_core_QM_7480_LYR-472_run_embedding.py
+modify_mol.py
 ```
 
-#### QM core = LYR-225
+## OPA, TPA, 3PA dal files:
 
 ```
-cp3_core_MM_3523_LYR-225_create_inputs.py
-cp3_core_MM_3523_LYR-225_run_embedding.py
+opa.dal
+tpa.dal
+3pa.dal
 ```
