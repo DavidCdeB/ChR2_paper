@@ -1,7 +1,7 @@
 # ChR2 paper
 
 <div align="center">
-  <img src="./TOC-ChR2-multiphoton.png" width="100px" alt="TOC" />
+  <img src="./TOC-ChR2-multiphoton.png" width="400px" alt="TOC" />
   <p><strong>Multiphoton Absorption Spectra of Channelrhodopsin-2 via Multiscale Simulation Methods</strong></p>
 </div>
 
