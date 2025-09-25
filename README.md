@@ -23,4 +23,33 @@ for frame in u.trajectory[0::spacing]:
 
 ## Creation of potentials
 
-### $\emph{mfcc}$
+The creation of the `.pot` files has been generated through two approaches (see publication for full details):
+
+- The __Molecular Fractionation with Conjugate Caps__ approach, i.e. "*mfcc*"
+- __Standard potenitals__,  i.e. . "*cp3*" 
+
+
+### mfcc approach
+
+```
+mfcc_ChR2_and_close-water_create_inputs.py
+mfcc_ChR2_and_close-water_write_potential.py
+```
+
+### cp3 approach
+
+This approach was used for production, 
+
+#### QM core = LYR-472
+
+```
+cp3_core_QM_7480_LYR-472_create_inputs.py
+cp3_core_QM_7480_LYR-472_run_embedding.py
+```
+
+#### QM core = LYR-225
+
+```
+cp3_core_MM_3523_LYR-225_create_inputs.py
+cp3_core_MM_3523_LYR-225_run_embedding.py
+```
