@@ -21,9 +21,26 @@ This repository hosts the scripts and files used to reproduce the data presented
 
 ## Split trajectory into pqr files:
 
+Install my forked version of MDAnalysis:
+
+```
+mkdir chr2-paper && chr2-paper
+git clone git@github.com:DavidCdeB/mdanalysis.git
+
+cd ../
+python -m venv mda-venv
+. mda-venv/bin/activate
+
+python -m pip install ./chr2-paper/mdanalysis
+```
+
+Having activated the virtual environment, now run:
+
 ```
 trr_to_pqr_snapshots.py
 ```
+
+This will generate the 200 .pqr files necessary to reproduce the results presented in this paper.
 
 ## Creation of potentials
 
