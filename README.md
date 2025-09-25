@@ -2,7 +2,7 @@
 
 This repository hosts the scripts and files used to reproduce the data presented in https://doi.org/10.26434/chemrxiv-2025-vzz1r
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Split trajectory into pqr files](#split-trajectory-into-pqr-files)
 - [Creation of potentials](#creation-of-potentials)
