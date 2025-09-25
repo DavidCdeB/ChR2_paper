@@ -1,5 +1,10 @@
 # ChR2 paper
 
+<div align="center">
+  <img src="./TOC-ChR2-multiphoton.png" width="100px" alt="TOC" />
+  <p><strong>Multiphoton Absorption Spectra of Channelrhodopsin-2 via Multiscale Simulation Methods</strong></p>
+</div>
+
 This repository hosts the scripts and files used to reproduce the data presented in https://doi.org/10.26434/chemrxiv-2025-vzz1r
 
 ## Table of Contents
