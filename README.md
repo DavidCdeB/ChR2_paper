@@ -15,6 +15,7 @@ This repository hosts the scripts and files used to reproduce the data presented
     - [cp3 approach](#cp3-approach)
         - [QM-sampled moiety; LYR-472](#qm-sampled-moiety-lyr-472)
         - [MM-sampled moiety; LYR-225](#mm-sampled-moiety-lyr-225)
+- [Autocorrelation function](#autocorrelation-function)
 - [Placing ECPs](#placing-ecps)
 - [OPA, TPA, 3PA dal files](#opa-tpa-3pa-dal-files)
 
