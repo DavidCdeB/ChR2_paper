@@ -4,8 +4,14 @@ This repository hosts the scripts and files used to reproduce the data presented
 
 ## 📋 Table of Contents
 
-- [Split trajectory into pqr files](#Split-trajectory-into-pqr files)
-- [Creation of potentials](#Creation-of-potentials)
+- [Split trajectory into pqr files](#split-trajectory-into-pqr-files)
+- [Creation of potentials](#creation-of-potentials)
+    - [mfcc approach](#mfcc-approach)
+    - [cp3 approach](#cp3-approach)
+        - [QM-sampled moiety; LYR-472](#qm-sampled-moiety-lyr-472)
+        - [MM-sampled moiety; LYR-225](#mm-sampled-moiety-lyr-225)
+- [Placing ECPs](#placing-ecps)
+- [OPA, TPA, 3PA dal files](#opa-tpa-3pa-dal-files)
 
 
 ## Split trajectory into pqr files:
