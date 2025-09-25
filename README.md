@@ -50,6 +50,15 @@ trr_to_pqr_snapshots.py
 
 This will generate the 200 .pqr files necessary to reproduce the results presented in this paper.
 
+## Autocorrelation function
+
+The script needed to create the autocorrelation function of the TPA cross sections:
+
+```
+
+```
+
+
 ## Creation of potentials
 
 The creation of the `.pot` files has been generated through two approaches (see publication for full details):
