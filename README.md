@@ -21,28 +21,23 @@ This repository hosts the scripts and files used to reproduce the data presented
 - [OPA, TPA, 3PA dal files](#opa-tpa-3pa-dal-files)
 
 
-## Merging trajectories:
+## Merging trajectories and centering to QM region
 
-You can add a relative link to the notebook file in your repository like this:
+One needs to merge the trajectories comming from different restarts to a single trajectory. And then center it with respect to the QM-sampled moiety (LYR-472) so that we can run the PE framwork (Fragment-based _E and PE-TD-DFT MPA spectra). Follow the isructions [here](./Merging_and_centering_trajectory.ipynb).
 
-[Open the notebook here](./Merging_and_centering_trajectory.ipynb)
-
-```
-Merging_and_centering_trajectory.ipynb
-```
 
 ## Split trajectory into pqr files:
 
 Download my forked version of MDAnalysis:
 
-```
+```bash
 mkdir chr2-paper && chr2-paper
 git clone git@github.com:DavidCdeB/mdanalysis.git
 ```
 
 Create a virtual environment and activate it:
 
-```
+```bash
 cd ../
 python -m venv mda-venv
 . mda-venv/bin/activate
@@ -50,25 +45,21 @@ python -m venv mda-venv
 
 Install:
 
-```
+```bash
 python -m pip install ./chr2-paper/mdanalysis
 ```
 
-Within the activated the virtual environment, now run:
+Within the activated the virtual environment, now run [trr_to_pqr_snapshots.py](./trr_to_pqr_snapshots.py)
 
-```
-trr_to_pqr_snapshots.py
+```bash
+python trr_to_pqr_snapshots.py
 ```
 
 This will generate the 200 .pqr files necessary to reproduce the results presented in this paper.
 
 ## Autocorrelation function
 
-The script needed to create the autocorrelation function of the TPA cross sections:
-
-```
-tpa_acf.py
-```
+The script needed to create the autocorrelation function of the TPA cross sections: [tpa_acf.py](./tpa_acf.py)
 
 
 ## Creation of potentials
@@ -83,9 +74,9 @@ The creation of the `.pot` files has been generated through two approaches (see 
 
 Execute one after the other, the following scripts:
 
-1. `mfcc_ChR2_and_close-water_create_inputs.py` creates the input fragment files
+1. [mfcc_ChR2_and_close-water_create_inputs.py](./mfcc_ChR2_and_close-water_create_inputs.py) creates the input fragment files
 
-2. `mfcc_ChR2_and_close-water_write_potential.py` writes the embedding potential in the form of a .pot file
+2. [mfcc_ChR2_and_close-water_write_potential.py](./mfcc_ChR2_and_close-water_write_potential.py) writes the embedding potential in the form of a .pot file
 
 
 ### cp3 approach
@@ -96,32 +87,28 @@ This approach was used for production, where, as described in the paper, we will
 
 Execute one after the other, the following scripts:
 
-1. `cp3_core_QM_7480_LYR-472_create_inputs.py`
+1. [cp3_core_QM_7480_LYR-472_create_inputs.py](./cp3_core_QM_7480_LYR-472_create_inputs.py)
 
-2. `cp3_core_QM_7480_LYR-472_run_embedding.py`
+2. [cp3_core_QM_7480_LYR-472_run_embedding.py](./cp3_core_QM_7480_LYR-472_run_embedding.py)
 
 #### MM-sampled moiety; LYR-225
 
 Execute one after the other, the following scripts:
 
 
-1. `cp3_core_MM_3523_LYR-225_create_inputs.py`
+1. [cp3_core_MM_3523_LYR-225_create_inputs.py](./cp3_core_MM_3523_LYR-225_create_inputs.py)
 
-2. `cp3_core_MM_3523_LYR-225_run_embedding.py`
+2. [cp3_core_MM_3523_LYR-225_run_embedding.py](./cp3_core_MM_3523_LYR-225_run_embedding.py)
 
 
 ## Placing ECPs:
 
-This script modifies the mol file and places ECPs in the surrounding MM atoms (6 Ang from core):
+This script modifies the mol file and places ECPs in the surrounding MM atoms (6 Ang from core): [modify_mol.py](./modify_mol.py)
 
-```
-modify_mol.py
-```
 
 ## OPA, TPA, 3PA dal files:
 
-```
-opa.dal
-tpa.dal
-3pa.dal
-```
+[opa.dal](./opa.dal)
+[tpa.dal](./tpa.dal)
+[3pa.dal](./3pa.dal)
+
