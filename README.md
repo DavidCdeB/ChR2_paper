@@ -23,7 +23,11 @@ This repository hosts the scripts and files used to reproduce the data presented
 
 ## Merging trajectories and centering to QM region
 
-One needs to merge the trajectories comming from different restarts to a single trajectory. And then center it with respect to the QM-sampled moiety (LYR-472) so that we can run the PE framwork (Fragment-based _E and PE-TD-DFT MPA spectra). Follow the isructions [here](./Merging_and_centering_trajectory.ipynb).
+One needs to:
+
+1. Merge the trajectories comming from different restarts to a single trajectory, and 
+
+2. Center the resulting trajectory with respect to the QM-sampled moiety (LYR-472) so that we can run the PE framwork (Fragment-based _E and PE-TD-DFT MPA spectra). Follow the isructions [here](./Merging_and_centering_trajectory.ipynb).
 
 
 ## Split trajectory into pqr files:
@@ -109,6 +113,8 @@ This script modifies the mol file and places ECPs in the surrounding MM atoms (6
 ## OPA, TPA, 3PA dal files:
 
 [opa.dal](./opa.dal)
+
 [tpa.dal](./tpa.dal)
+
 [3pa.dal](./3pa.dal)
 
