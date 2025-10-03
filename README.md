@@ -9,6 +9,7 @@ This repository hosts the scripts and files used to reproduce the data presented
 
 ## Table of Contents
 
+- [Merging trajectories and centering to QM region](#merging-trajectories-and-centering-to-qm-region)
 - [Split trajectory into pqr files](#split-trajectory-into-pqr-files)
 - [Creation of potentials](#creation-of-potentials)
     - [mfcc approach](#mfcc-approach)
@@ -19,6 +20,16 @@ This repository hosts the scripts and files used to reproduce the data presented
 - [Placing ECPs](#placing-ecps)
 - [OPA, TPA, 3PA dal files](#opa-tpa-3pa-dal-files)
 
+
+## Merging trajectories:
+
+You can add a relative link to the notebook file in your repository like this:
+
+[Open the notebook here](./Merging_and_centering_trajectory.ipynb)
+
+```
+Merging_and_centering_trajectory.ipynb
+```
 
 ## Split trajectory into pqr files:
 
