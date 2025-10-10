@@ -10,6 +10,7 @@ This repository hosts the scripts and files used to reproduce the data presented
 ## Table of Contents
 
 - [Merging trajectories and centering to QM region](#merging-trajectories-and-centering-to-qm-region)
+- [MiMiC files](#mimic-files)
 - [Split trajectory into pqr files](#split-trajectory-into-pqr-files)
 - [Creation of potentials](#creation-of-potentials)
     - [mfcc approach](#mfcc-approach)
@@ -29,10 +30,23 @@ One needs to:
 
 2. Center the resulting trajectory with respect to the QM-sampled moiety (LYR-472) so that we can run the PE framwork (Fragment-based PE and PE-TD-DFT MPA spectra, steps 4 and 5 in the workflow, respectively). Follow the isructions [here](./Merging_and_centering_trajectory.ipynb).
 
+## MiMiC files
+
+Inside the MiMiC directory, you may find the input files to run the Berendsen equilibration and Nose-Hoover production:
+
+```bash
+MiMiC_files/
+└── Berendsen_equilibration
+    ├── equilibration.inp
+    └── Nose-Hoover_production
+        └── equilibration.inp
+```
+
+
 
 ## Split trajectory into pqr files:
 
-Download my forked version of MDAnalysis:
+From the QM/MM MD trajectory, we will generate a .pqr file for each snapshot. To ensure compatibility with PyFraME, we use a forked version of MDAnalysis that provides the required .pqr format. 
 
 ```bash
 mkdir chr2-paper && chr2-paper
