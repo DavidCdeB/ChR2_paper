@@ -7,7 +7,7 @@
 
 This repository hosts the scripts and files used to reproduce the data presented here:
 
-**Carrasco-Busturia D***, Linares M, Norman P, Haugaard Olsen JM. Multiphoton Absorption Spectra of Channelrhodopsin-2 via Multiscale Simulation Methods. ChemRxiv. 2025; https://doi.org/10.26434/chemrxiv-2025-vzz1r-v2 
+**Carrasco-Busturia D***, Linares M, Norman P, Haugaard Olsen JM. _Multiphoton Absorption Spectra of Channelrhodopsin-2 via Multiscale Simulation Methods_. ChemRxiv. 2025; https://doi.org/10.26434/chemrxiv-2025-vzz1r-v2 
 
  
 ## Table of Contents
