@@ -24,11 +24,13 @@ This repository hosts the scripts and files used to reproduce the data presented
 
 ## Merging trajectories and centering to QM region
 
-One needs to:
+The first step in the workflow requires to:
 
 1. Merge the trajectories comming from different restarts to a single trajectory, and 
 
-2. Center the resulting trajectory with respect to the QM-sampled moiety (LYR-472) so that we can run the PE framwork (Fragment-based PE and PE-TD-DFT MPA spectra, steps 4 and 5 in the workflow, respectively). Follow the isructions [here](./Merging_and_centering_trajectory.ipynb).
+2. Center the resulting trajectory with respect to the QM-sampled moiety (LYR-472) so that we can run the PE framwork (Fragment-based PE and PE-TD-DFT MPA spectra, steps 4 and 5 in the workflow, respectively). 
+
+Follow the instructions [here](./Merging_and_centering_trajectory.ipynb).
 
 ## MiMiC files
 
