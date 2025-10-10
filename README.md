@@ -37,7 +37,7 @@ Follow the instructions [here](./Merging_and_centering_trajectory.ipynb).
 
 ## MiMiC files
 
-Inside the MiMiC directory, you may find the input files to run the Berendsen equilibration and Nose-Hoover production:
+Inside the MiMiC directory, you may find the input files to run the Berendsen equilibration and Nosé-Hoover production:
 
 ```bash
 MiMiC_files/
