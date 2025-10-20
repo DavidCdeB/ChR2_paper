@@ -35,6 +35,13 @@ The first step in the workflow requires to:
 
 Follow the instructions [here](./Merging_and_centering_trajectory.ipynb).
 
+The relevant molecular dynamics trajectories necessary to reprduce the findings in this paper can be found here:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17338213.svg)](https://zenodo.org/records/17338213)
+
+<!-- https://doi.org/10.5281/zenodo.17338213 -->
+
+
 ## MiMiC files
 
 Inside the MiMiC directory, you may find the input files to run the Berendsen equilibration and Nosé-Hoover production:
