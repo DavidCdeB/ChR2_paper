@@ -1,4 +1,4 @@
-# Multiphoton Absorption Spectra of Channelrhodopsin-2 via Multiscale Simulation Methods
+# Relevant scripts and all workflow instructions necessary to reproduce the results presented in _Multiphoton Absorption Spectra of Channelrhodopsin-2 via Multiscale Simulation Methods_
 
 <div align="center">
   <img src="./TOC-ChR2-multiphoton.png" width="400px" alt="TOC" />
