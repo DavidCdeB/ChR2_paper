@@ -12,6 +12,10 @@ _Multiphoton Absorption Spectra of Channelrhodopsin-2 via Multiscale Simulation 
 Journal of Chemical Theory and Computation 2026 22 (2), 1133-1148
 https://doi.org/10.1021/acs.jctc.5c01719
 
+## Citation
+
+If you use this code or our methods in your research, please cite our paper:
+
 ```bibtex
 @article{carrasco-busturia-chr2,
 author = {Carrasco-Busturia, David and Linares, Mathieu and Norman, Patrick and Haugaard Olsen, Jógvan Magnus},
